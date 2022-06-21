@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "debugsurvivability.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "GeneratorOptionMixins"
+  ],
+  "client": [
+    "BreakableDebugNoDebug",
+    "ShowMoreOptionsDebugMixin",
+    "ClientWorldDarknessMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

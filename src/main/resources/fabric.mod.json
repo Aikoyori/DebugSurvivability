@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "debugsurvivability",
+  "version": "${version}",
+  "name": "Debug Survivability",
+  "description": "Made Debug World mutable, meaning that you can now survive inside a Debug World.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/debugsurvivability/debugsurvivability.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "debugsurvivability.client.DebuggabilityClient"
+    ],
+    "main": [
+      "debugsurvivability.Debuggability"
+    ]
+  },
+  "mixins": [
+    "debuggability.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "minecraft": "1.19"
+  },
+
+  "accessWidener" : "debuggability.accesswidener"
+}

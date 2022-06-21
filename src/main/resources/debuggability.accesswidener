@@ -1,0 +1,8 @@
+accessWidener   v1  named
+accessible class net/minecraft/client/render/chunk/RenderedChunk
+accessible method net/minecraft/server/world/ServerChunkManager tickChunks ()V
+accessible method net/minecraft/client/gui/screen/world/CreateWorldScreen startServer ()V
+accessible method net/minecraft/client/gui/screen/world/CreateWorldScreen createLevelInfo (Z)Lnet/minecraft/world/level/LevelInfo;
+accessible method net/minecraft/server/MinecraftServer createWorlds (Lnet/minecraft/server/WorldGenerationProgressListener;)V
+accessible field net/minecraft/client/render/chunk/RenderedChunk debugWorld Z
+mutable field net/minecraft/client/render/chunk/RenderedChunk debugWorld Z
