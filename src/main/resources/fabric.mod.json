@@ -5,7 +5,7 @@
   "name": "Debug Survivability",
   "description": "Made Debug World mutable, meaning that you can now survive inside a Debug World.",
   "authors": ["Aikoyori"],
-  "contact": {"https://aikoyori.xyz/"},
+  "contact": {"Twitter": "@AikoyoriPlus","Website": "https://aikoyori.xyz"},
   "license": "MIT",
   "icon": "assets/debugsurvivability/debugsurvivability.png",
   "environment": "*",
