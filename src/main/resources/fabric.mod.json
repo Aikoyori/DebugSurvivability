@@ -24,7 +24,6 @@
     "debuggability.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.8",
     "minecraft": "1.19"
   },
 
