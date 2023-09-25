@@ -1,0 +1,15 @@
+{
+  "text.config.debugsurvivability.title": "Debug World Generation Config",
+  "text.config.debugsurvivability.section.gridSizeConfig": "Grid Sizes",
+  "text.config.debugsurvivability.section.misc": "Miscellaneous",
+  "text.config.debugsurvivability.option.gridXSize": "Grid X Size",
+  "text.config.debugsurvivability.option.gridYSize": "Grid Y Size",
+  "text.config.debugsurvivability.option.gridZSize": "Grid Z Size",
+  "text.config.debugsurvivability.option.iterations": "Iterations",
+  "text.config.debugsurvivability.option.gridGapX": "Grid Gap X",
+  "text.config.debugsurvivability.option.gridGapY": "Grid Gap Y",
+  "text.config.debugsurvivability.option.gridGapZ": "Grid Gap Z",
+  "text.config.debugsurvivability.option.blockSize": "Block Size (NYI)",
+  "text.config.debugsurvivability.option.barrierLevel": "Barrier Y Level",
+  "text.config.debugsurvivability.option.blocksLevel": "Block starts at Y = "
+}

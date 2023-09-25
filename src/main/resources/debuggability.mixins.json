@@ -4,12 +4,14 @@
   "package": "debugsurvivability.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "GeneratorOptionMixins"
+    "BreakableDebugNoDebug",
+    "DebugChunkGenMixin",
+    "DimOptRegHolderMixin",
+    "WorldCreatorMixin"
   ],
   "client": [
-    "BreakableDebugNoDebug",
-    "ShowMoreOptionsDebugMixin",
-    "ClientWorldDarknessMixin"
+    "ClientWorldDarknessMixin",
+    "ShowCustomizeWorld"
   ],
   "injectors": {
     "defaultRequire": 1
