@@ -19,5 +19,5 @@
   "text.config.debugsurvivability.option.blocksLevel": "Block starts at Y = ",
   "text.config.debugsurvivability.option.blocksLevel.tooltip": "Which Y level the first block should generate at\n\nIf you set it to be the same as barrier level,\n the block will generate inside the floor. \nFor survival play, it is suggested for it\nto not be under the barrier floor.",
   "text.config.debugsurvivability.option.voidDarknessLevel": "Void Darkness Starts at Y = ",
-  "text.config.debugsurvivability.option.voidDarknessLevel.tooltip": "Under this Y level should the\nlower part of skybox turn dark\n\nIt is §lhighly recommended§r to set it to be a bit\nlower than barrier level.\n§c§lSetting it to just 2-3 blocks above the barrier\n§c§WILL likely cause the screen to flash\n§c§lwhen jumping on the barrier floor."
+  "text.config.debugsurvivability.option.voidDarknessLevel.tooltip": "Under this Y level should the\nlower part of skybox turn dark\n\nIt is §lhighly recommended§r to set it to be a bit\nlower than barrier level.\n§c§lSetting it to just 2-3 blocks above the barrier\n§c§lWILL likely cause the screen to flash\n§c§lwhen jumping on the barrier floor."
 }
