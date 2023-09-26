@@ -13,6 +13,6 @@ public class Debuggability implements ModInitializer {
     public static final DebugSurvivabilityConfig DSCONFIG = DebugSurvivabilityConfig.createAndLoad();
     @Override
     public void onInitialize() {
-
+        
     }
 }

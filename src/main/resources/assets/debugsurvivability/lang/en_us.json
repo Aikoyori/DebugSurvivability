@@ -1,15 +1,23 @@
 {
   "text.config.debugsurvivability.title": "Debug World Generation Config",
   "text.config.debugsurvivability.section.gridSizeConfig": "Grid Sizes",
-  "text.config.debugsurvivability.section.misc": "Miscellaneous",
   "text.config.debugsurvivability.option.gridXSize": "Grid X Size",
+  "text.config.debugsurvivability.option.gridXSize.tooltip": "Note on Grid XYZ Size:\n\nBy default, Minecraft determines the width and height by finding square root\nof total amount of block states (here represented as -1). \nYou can put negative numbers to scale that number.\nPositive numbers sets the width normally.",
   "text.config.debugsurvivability.option.gridYSize": "Grid Y Size",
+  "text.config.debugsurvivability.option.gridYSize.tooltip": "Note on Grid XYZ Size:\n\nBy default, Minecraft determines the width and height by finding square root\nof total amount of block states (here represented as -1). \nYou can put negative numbers to scale that number.\nPositive numbers sets the width normally.",
   "text.config.debugsurvivability.option.gridZSize": "Grid Z Size",
+  "text.config.debugsurvivability.option.gridZSize.tooltip": "Note on Grid XYZ Size:\n\nBy default, Minecraft determines the width and height by finding square root\nof total amount of block states (here represented as -1). \nYou can put negative numbers to scale that number.\nPositive numbers sets the width normally.",
   "text.config.debugsurvivability.option.iterations": "Iterations",
+  "text.config.debugsurvivability.option.iterations.tooltip": "Amount of times the sequence repeats",
   "text.config.debugsurvivability.option.gridGapX": "Grid Gap X",
   "text.config.debugsurvivability.option.gridGapY": "Grid Gap Y",
   "text.config.debugsurvivability.option.gridGapZ": "Grid Gap Z",
   "text.config.debugsurvivability.option.blockSize": "Block Size (NYI)",
+  "text.config.debugsurvivability.section.misc": "Miscellaneous",
   "text.config.debugsurvivability.option.barrierLevel": "Barrier Y Level",
-  "text.config.debugsurvivability.option.blocksLevel": "Block starts at Y = "
+  "text.config.debugsurvivability.option.barrierLevel.tooltip": "Which Y level should the barrier floor be.",
+  "text.config.debugsurvivability.option.blocksLevel": "Block starts at Y = ",
+  "text.config.debugsurvivability.option.blocksLevel.tooltip": "Which Y level the first block should generate at\n\nIf you set it to be the same as barrier level,\n the block will generate inside the floor. \nFor survival play, it is suggested for it\nto not be under the barrier floor.",
+  "text.config.debugsurvivability.option.voidDarknessLevel": "Void Darkness Starts at Y = ",
+  "text.config.debugsurvivability.option.voidDarknessLevel.tooltip": "Under this Y level should the\nlower part of skybox turn dark\n\nIt is §lhighly recommended§r to set it to be a bit\nlower than barrier level.\n§c§lSetting it to just 2-3 blocks above the barrier\n§c§WILL likely cause the screen to flash\n§c§lwhen jumping on the barrier floor."
 }

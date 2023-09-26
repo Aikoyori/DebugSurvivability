@@ -1,5 +1,6 @@
 package debugsurvivability.mixins;
 
+import debugsurvivability.Debuggability;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.world.HeightLimitView;
 import org.spongepowered.asm.mixin.Mixin;
@@ -18,6 +19,6 @@ public class ClientWorldDarknessMixin {/*
     @Inject(method = "getSkyDarknessHeight",at=@At("HEAD"),cancellable = true)
     public void debugSurv$skynoflashy(HeightLimitView world, CallbackInfoReturnable<Double> cir)
     {
-        cir.setReturnValue(60d);
+        cir.setReturnValue(Debuggability.DSCONFIG.voidDarknessLevel());
     }
 }
