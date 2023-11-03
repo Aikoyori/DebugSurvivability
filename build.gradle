@@ -63,7 +63,7 @@ java {
 }
 
 loom {
-    accessWidenerPath = file("/src/main/resources/debuggability.accesswidener")
+    accessWidenerPath = file("src/main/resources/debuggability.accesswidener")
 }
 jar {
     from("LICENSE") {

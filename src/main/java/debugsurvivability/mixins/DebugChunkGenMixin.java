@@ -11,8 +11,10 @@ import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.ChunkSectionPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.StructureWorldAccess;
+import net.minecraft.world.biome.source.BiomeSource;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.gen.StructureAccessor;
+import net.minecraft.world.gen.chunk.ChunkGenerator;
 import net.minecraft.world.gen.chunk.DebugChunkGenerator;
 import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
@@ -22,7 +24,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(DebugChunkGenerator.class)
-public class DebugChunkGenMixin {
+public abstract class DebugChunkGenMixin extends ChunkGenerator {
+    public DebugChunkGenMixin(BiomeSource biomeSource) {
+        super(biomeSource);
+    }
+
     @Inject(method = "generateFeatures",at=@At("HEAD"), cancellable = true)
     void desu$genFeat(StructureWorldAccess world, Chunk chunk, StructureAccessor structureAccessor, CallbackInfo ci){
 
@@ -42,6 +48,7 @@ public class DebugChunkGenMixin {
                 }
             }
         }
+        super.generateFeatures(world, chunk, structureAccessor);
         ci.cancel();
     }
 }
