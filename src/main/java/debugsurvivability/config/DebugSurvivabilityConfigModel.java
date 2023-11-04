@@ -8,6 +8,10 @@ import org.apache.logging.log4j.core.config.plugins.validation.Constraint;
 @Modmenu(modId = "debugsurvivability")
 @Config(name = "debugsurvivability", wrapperName = "DebugSurvivabilityConfig",defaultHook = true)
 public class DebugSurvivabilityConfigModel {
+    @SectionHeader("worldgen")
+    public String barrierBlockType = "minecraft:barrier";
+    public boolean generateNetherPortal = false;
+    public boolean generateEndPortal = false;
     @SectionHeader("gridSizeConfig")
     public double gridXSize = -1;
     @RangeConstraint(min = 0, max = 384)

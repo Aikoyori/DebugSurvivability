@@ -6,6 +6,8 @@ import debugsurvivability.util.DebugBlockStateGetter;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.ChunkSectionPos;
@@ -42,7 +44,7 @@ public abstract class DebugChunkGenMixin extends ChunkGenerator {
                 for(int iterZ = 0; iterZ < 16; iterZ++) {
                     int realX = ChunkSectionPos.getOffsetPos(chunkX, iterX);
                     int realZ = ChunkSectionPos.getOffsetPos(chunkZ, iterZ);
-                    world.setBlockState(mutable.set(realX, Debuggability.DSCONFIG.barrierLevel(), realZ), Blocks.BARRIER.getDefaultState(), Block.NOTIFY_LISTENERS);
+                    world.setBlockState(mutable.set(realX, Debuggability.DSCONFIG.barrierLevel(), realZ), Registries.BLOCK.get(new Identifier(Debuggability.DSCONFIG.barrierBlockType())).getDefaultState(), Block.NOTIFY_LISTENERS);
                     BlockState blockState = DebugBlockStateGetter.getBlockState(realX, iterY, realZ);
                     world.setBlockState(mutable.set(realX, Debuggability.DSCONFIG.blocksLevel()+iterY, realZ), blockState, Block.NOTIFY_LISTENERS);
                 }
